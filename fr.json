@@ -1,0 +1,49 @@
+{
+    "name": "Ramzi Benmansour",
+    "role": "DÉVELOPPEUR JUNIOR",
+    "summary": "Développeur junior passionné avec de l'expérience dans le développement web et mobile. Compétent dans divers langages de programmation et technologies, notamment C, C++, Java, HTML5, CSS3, JavaScript et Angular. Excité de travailler sur des projets stimulants et de contribuer à des solutions innovantes.",
+    "projects": [
+        {
+            "name": "Application Star Wars (Angular)",
+            "description": "Conception et développement d'une application clé pour l'alliance rebelle : gestion des pilotes, chasseurs, et affectations.",
+            "github": "https://github.com/yourusername/star-wars-app",
+            "image": "project1.jpg"
+        },
+        {
+            "name": "Miamle (Java EE, MySQL)",
+            "description": "Conception et développement d'une application web conviviale pour la gestion des auberges espagnoles, avec inscription, participation et gestion des événements.",
+            "github": "https://github.com/yourusername/miamle-app",
+            "image": "project2.jpg"
+        },
+        {
+            "name": "GEN QUIZ (React + Node.js)",
+            "description": "Application Web en React pour créer, jouer et partager des quiz interactifs. Gestion des utilisateurs, scores, et catégories de quiz.",
+            "github": "https://github.com/yourusername/gen-quiz",
+            "image": "project3.jpg"
+        },
+        {
+            "name": "BlackJack (Python)",
+            "description": "Développement d'une application en python offrant une expérience de jeu immersive avec des règles authentiques et une interface utilisateur conviviale.",
+            "github": "https://github.com/yourusername/blackjack-python",
+            "image": "project4.jpg"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Java",
+            "icon": "skill1.png"
+        },
+        {
+            "name": "HTML5",
+            "icon": "skill2.png"
+        },
+        {
+            "name": "C++",
+            "icon": "skill3.png"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "skill4.png"
+        }
+    ]
+}

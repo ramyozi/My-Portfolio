@@ -1,0 +1,49 @@
+{
+    "name": "Ramzi Benmansour",
+    "role": "JUNIOR DEVELOPER",
+    "summary": "Passionate junior developer with experience in web and mobile development. Skilled in various programming languages and technologies, including C, C++, Java, HTML5, CSS3, JavaScript, and Angular. Excited to work on challenging projects and contribute to innovative solutions.",
+    "projects": [
+        {
+            "name": "Star Wars Single Page Application (Angular)",
+            "description": "Conception and development of a key application for the Rebel Alliance, managing pilots, fighters, and assignments.",
+            "github": "https://github.com/yourusername/star-wars-app",
+            "image": "project1.jpg"
+        },
+        {
+            "name": "Miamle (Java EE, MySQL)",
+            "description": "Conception and development of a user-friendly Spanish hostel management web application, emphasizing registration, participation, and event management.",
+            "github": "https://github.com/yourusername/miamle-app",
+            "image": "project2.jpg"
+        },
+        {
+            "name": "GEN QUIZ (React + Node.js)",
+            "description": "Web application in React for creating, playing, and sharing interactive quizzes. User management, scores, and quiz categories.",
+            "github": "https://github.com/yourusername/gen-quiz",
+            "image": "project3.jpg"
+        },
+        {
+            "name": "BlackJack (Python)",
+            "description": "Development of a Python application offering an immersive gaming experience with authentic rules and a user-friendly interface.",
+            "github": "https://github.com/yourusername/blackjack-python",
+            "image": "project4.jpg"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Java",
+            "icon": "skill1.png"
+        },
+        {
+            "name": "HTML5",
+            "icon": "skill2.png"
+        },
+        {
+            "name": "C++",
+            "icon": "skill3.png"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "skill4.png"
+        }
+    ]
+}
