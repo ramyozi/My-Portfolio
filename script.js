@@ -1,10 +1,38 @@
 const toggleSwitch = document.getElementById("language-toggle");
 const iosToggleLabel = document.querySelector(".ios-toggle-label");
+const summaryTitle = document.getElementById("summary-title");
 const summaryContent = document.getElementById("summary-content");
 const projectsSection = document.getElementById("projects");
 const skillsSection = document.getElementById("skills");
 
 let currentLanguage = "fr"; // Default language is French
+
+
+
+
+
+document.getElementById("showProjects").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("projects").style.display = "grid";
+    document.getElementById("skills").style.display = "none";
+});
+
+document.getElementById("showSkills").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("projects").style.display = "none";
+    document.getElementById("skills").style.display = "grid";
+});
+
+
+document.getElementById("projects").style.display = "grid";
+document.getElementById("skills").style.display = "none";
+
+
+
+
+
+
+
 
 
 
@@ -35,6 +63,7 @@ function updateContent() {
             document.getElementById("name").textContent = data.name;
             document.getElementById("role").textContent = data.role;
 
+            summaryTitle.textContent = data.summaryT;
             summaryContent.textContent = data.summary;
 
             projectsSection.innerHTML = "";
@@ -57,7 +86,7 @@ function updateContent() {
                 skillDiv.classList.add("skill");
                 skillDiv.innerHTML = `
                     <div class="skill-icon"><img src="${skill.icon}" alt="${skill.name}"></div>
-                    <h3>${skill.name}</h3>
+                    <h3 class="skill-name">${skill.name}</h3>
                     <p class="skill-level">${skill.level}</p>
                 `;
                 skillsSection.appendChild(skillDiv);

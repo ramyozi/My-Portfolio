@@ -6,6 +6,8 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  text-align: center;
+  
 }
 
 /* Header Styles */
@@ -23,6 +25,33 @@ header h1 {
 header p {
   font-size: 18px;
 }
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #666;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
 
 /* Summary Styles */
 #summary {
@@ -49,21 +78,26 @@ header p {
   border-radius: 5px;
 }
 
-/* Projects and Skills Styles */
-.project, .skill {
-  background-color: #fff;
-  margin: 20px;
+
+.dynamic-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   padding: 20px;
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.project-image {
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 10px;
+/* Hide empty sections */
+.dynamic-section:empty {
+  display: none;
 }
+
+
 
 .ios-toggle-switch {
   position: relative;
