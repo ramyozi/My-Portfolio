@@ -102,10 +102,11 @@ header p {
 
 /* Label Text Styles */
 .ios-toggle-label::before {
+  content: 'fr'; 
   display: block;
   text-align: center;
   line-height: 30px;
-  color: #fff; /* Label Text Color */
+  color: #fff; 
   font-weight: bold;
   transition: opacity 0.3s ease-in-out;
 }
