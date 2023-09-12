@@ -1,75 +1,119 @@
-:root {
-    --bg-color: hsl(160, 63%, 84%);
-    --typewriterSpeed: 5s;
-    --typewriterCharacters: 24;
-  }
-  
-  body {
-    margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
-    text-align: center;
-    background: var(--bg-color);
-  }
-  
-  h1 {
-    font-size: clamp(1rem, 3vw + 1rem, 4rem);
-    position: relative;
-    font-family: "Source Code Pro", monospace;
-    position: relative;
-    width: max-content;
-  }
-  
-  h1::before,
-  h1::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  h1::before {
-    background: var(--bg-color);
-    animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards;
-  }
-  
-  h1::after {
-    width: 0.125em;
-    background: black;
-    animation: typewriter var(--typewriterSpeed)
-        steps(var(--typewriterCharacters)) 1s forwards,
-      blink 750ms steps(var(--typewriterCharacters)) infinite;
-  }
-  
-  .subtitle {
-    color: hsl(0 0% 0% / 0.7);
-    font-size: 2rem;
-    font-weight: 400;
-    opacity: 0;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
-  }
-  
-  @keyframes typewriter {
-    to {
-      left: 100%;
-    }
-  }
-  
-  @keyframes blink {
-    to {
-      background: transparent;
-    }
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+/* style.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Summary Styles */
+#summary {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Language Switcher Styles */
+#language-switcher {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#language-switcher button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Projects and Skills Styles */
+.project, .skill {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.ios-toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.ios-toggle-input {
+  display: none;
+}
+
+.ios-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #007BFF; /* Active (Right) Color */
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.ios-toggle-label.toggle-left {
+  left: 0;
+  background-color: #007BFF; /* Active (Right) Color */
+}
+
+.ios-toggle-label.toggle-right {
+  left: 50%;
+  background-color: #28A745; /* Active (Left) Color */
+}
+
+/* Label Text Styles */
+.ios-toggle-label::before {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  color: #fff; /* Label Text Color */
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ios-toggle-label.toggle-left::before {
+  content: 'Fr'; /* French Label */
+}
+
+.ios-toggle-label.toggle-right::before {
+  content: 'En'; /* English Label */
+}
