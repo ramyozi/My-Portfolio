@@ -31,19 +31,53 @@
     "skills": [
         {
             "name": "Java",
-            "icon": "skill1.png"
+            "icon": "skill1.png",
+            "level": "Avancé"
         },
         {
             "name": "HTML5",
-            "icon": "skill2.png"
+            "icon": "skill2.png",
+            "level": "Avancé"
         },
         {
             "name": "C++",
-            "icon": "skill3.png"
+            "icon": "skill3.png",
+            "level": "Intermédiaire"
         },
         {
             "name": "JavaScript",
-            "icon": "skill4.png"
+            "icon": "skill4.png",
+            "level": "Intermédiaire"
+        },
+        {
+            "name": "Angular",
+            "icon": "skill5.png",
+            "level": "Intermédiaire"
+        },
+        {
+            "name": "Python",
+            "icon": "skill6.png",
+            "level": "Intermédiaire"
+        },
+        {
+            "name": "CSS3",
+            "icon": "skill7.png",
+            "level": "Avancé"
+        },
+        {
+            "name": "React",
+            "icon": "skill8.png",
+            "level": "Intermédiaire"
+        },
+        {
+            "name": "Node.js",
+            "icon": "skill9.png",
+            "level": "Intermédiaire"
+        },
+        {
+            "name": "MySQL",
+            "icon": "skill10.png",
+            "level": "Intermédiaire"
         }
     ]
 }

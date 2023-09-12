@@ -102,7 +102,7 @@ header p {
 
 /* Label Text Styles */
 .ios-toggle-label::before {
-  content: 'fr'; 
+  content: 'Fr'; 
   display: block;
   text-align: center;
   line-height: 30px;
@@ -117,4 +117,29 @@ header p {
 
 .ios-toggle-label.toggle-right::before {
   content: 'En'; /* English Label */
+}
+#skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px; /* Gap between items */
+  padding: 20px; /* Optional padding */
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill-icon img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.skill-level {
+  color: #888;
+  font-size: 14px;
 }

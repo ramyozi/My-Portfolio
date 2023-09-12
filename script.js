@@ -4,7 +4,7 @@ const summaryContent = document.getElementById("summary-content");
 const projectsSection = document.getElementById("projects");
 const skillsSection = document.getElementById("skills");
 
-let currentLanguage = "en"; // Default language is English
+let currentLanguage = "fr"; // Default language is French
 
 
 
@@ -58,6 +58,7 @@ function updateContent() {
                 skillDiv.innerHTML = `
                     <div class="skill-icon"><img src="${skill.icon}" alt="${skill.name}"></div>
                     <h3>${skill.name}</h3>
+                    <p class="skill-level">${skill.level}</p>
                 `;
                 skillsSection.appendChild(skillDiv);
             });
