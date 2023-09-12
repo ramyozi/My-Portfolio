@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Ramzi Benmansour - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ramzi Benmansour - Portfolio</title>
 </head>
+
 <body>
-    <header>
-        <h1>Ramzi Benmansour</h1>
-        <p>DEVELOPPEUR JUNIOR</p>
-    </header>
-    
-    <section id="summary">
-        <h2>Summary</h2>
-        <p>Passionate junior developer with experience in web and mobile development. Skilled in various programming languages and technologies, including C, C++, Java, HTML5, CSS3, JavaScript, and Angular. Excited to work on challenging projects and contribute to innovative solutions.</p>
-    </section>
+  <header>
+    <h1 id="name">Ramzi Benmansour</h1>
+    <p id="role">DÉVELOPPEUR JUNIOR</p>
+  </header>
 
-    <div id="language-switcher">
-        <button id="fr-btn">Français</button>
-        <button id="en-btn">English</button>
-    </div>
+  <section id="summary">
+    <h2>Summary</h2>
+    <p id="summary-content"></p>
+  </section>
 
+  <div id="language-switcher" class="ios-toggle-switch">
+    <input type="checkbox" id="language-toggle" class="ios-toggle-input" />
+    <label for="language-toggle" class="ios-toggle-label"></label>
+</div>
 
-    <script src="script.js"></script>
+  <section id="projects"></section>
+  <section id="skills"></section>
+  <script src="script.js"></script>
+
+  </section>
+  <script src="script.js"></script>
 </body>
+
 </html>
